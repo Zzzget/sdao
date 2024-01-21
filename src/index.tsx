@@ -1,15 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { store } from './store/store';
+import { Provider } from 'react-redux';
+import { PersistGate } from 'redux-persist/lib/integration/react';
+import { persistor } from './store/store';
+// 导入antd
+import 'antd/dist/reset.css';
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
+const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <PersistGate persistor={persistor}>
+        <App />
+      </PersistGate>
+    </Provider>
   </React.StrictMode>
 );
 

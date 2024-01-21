@@ -1,0 +1,12 @@
+.header {
+  height: 100px;
+  background-color: #FFF;
+  box-shadow: 0px 5px 4px #ccc;
+  .header-left {
+    float: right;
+    display: flex;
+    span {
+      line-height: 100px;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+·body {
+    background-color: #eef2f5;
+}
+.container{
+  .nav-left{
+      background-color:#ffffff;
+      color: #ffffff;
+      height: calc(100vh);
+  }
+  .main{
+      height: calc(100vh);
+      // background-color: @colorL;
+      overflow: auto;
+  }
+  .content{
+      position: relative;
+      padding: 20px;
+      
+  }
+  .lishi {
+    width: 100%;
+    height: 50px;
+    border-bottom: solid #ccc 1px;
+  }
+}
